@@ -1,3 +1,8 @@
+# Hardcode these IDs, just for testing. Read these in as arguments later.
+export USERNAME=user
+export USER_UID=1000
+export USER_GID=$USER_UID
+
 # Add vscode user with same UID and GID as your host system
 # (copied from https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user#_creating-a-nonroot-user)
 groupadd --gid $USER_GID $USERNAME
